@@ -1,0 +1,49 @@
+<ion-side-menus enable-menu-with-back-views="true">
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar-dark">
+			<ion-nav-back-button>
+			</ion-nav-back-button>
+			<ion-nav-buttons side="left">
+				<button class="button  button-clear ion-navicon" menu-toggle="left">
+				</button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
+		<ion-nav-view name="viewContent" animation="slide-left-right"></ion-nav-view>
+	</ion-side-menu-content>
+	<ion-side-menu side="left" class="menu">
+		<ion-header-bar ui-sref="app.gallery" menu-close nav-direction="enter" nav-clear>
+			<ion-item class="item item-thumbnail-left">
+				<img src="img/sam_bird.png" width="100px" alt="Fry" class="animated">
+				<h2>SAMYAK <br>2017</h2>
+				<p style="font-size: 12pt">By KLUniversity</p>
+			</ion-item>
+		</ion-header-bar><br>
+		<ion-content class="has-header">
+			<ion-list>
+				<ion-item  menu-close nav-direction="enter" href="#/item" class="item item-icon-right" ui-sref-active="active">
+                    About KLU
+                    <i class="icon ion-chevron-right"></i>
+				</ion-item>
+				<ion-item menu-close nav-direction="enter" href="#/kluinfo" class="item item-icon-right" ui-sref-active="active">
+                    About Samyak
+                    <i class="icon ion-chevron-right"></i>
+				</ion-item>
+
+<ion-item menu-close nav-direction="enter" href="#/messages" class="item item-icon-right" ui-sref-active="active">
+<p style="color: white">Messages</p>
+                    <i class="icon ion-chevron-right"></i>
+</ion-item>
+<ion-item menu-close nav-direction="enter" href="#/wikitude" class="item item-icon-right" ui-sref-active="active">
+<p style="color: white">Augmented Reality Experience</p>
+                    <i class="icon ion-chevron-right"></i>
+</ion-item>
+			</ion-list>
+		</ion-content>
+
+		<ion-footer-bar style="background-color:blue" class="bar-light" >
+		<div style="background-color:blue " class="button-bar">
+                  <button style="background-color:blue" class="button"  onclick="window.open('https://github.com/suryakss', '_system', 'location=yes'); return false;"><p style="color: white">Dev by Surya Kosaraju(SEA)</p></button>
+			</div>
+		</ion-footer-bar>
+	</ion-side-menu>
+</ion-side-menus>
